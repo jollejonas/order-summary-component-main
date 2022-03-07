@@ -1,0 +1,138 @@
+body {
+  background-color: #e0e8ff;
+  background-image: url("../images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 375px;
+  margin: 0;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.order-summary {
+  margin: 10px auto 10px auto;
+  border-radius: 20px;
+  width: 340px;
+  height: 100%;
+  background-color: white;
+}
+
+header {
+  text-align: center;
+}
+header img {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+header h1 {
+  color: #1f2f56;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+main p {
+  font-size: 16px;
+  text-align: center;
+}
+main .info {
+  line-height: 24px;
+  margin: 0 28px 0 28px;
+  font-weight: 500;
+  color: #7280a7;
+}
+main .subscribe {
+  background-color: #f5f7ff;
+  border-radius: 8px;
+  margin: 20px 20px 0 20px;
+  padding: 0 12px 0 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main .subscribe a {
+  font-weight: 700;
+}
+main .subscribe a:hover {
+  text-decoration: none;
+  color: #756af1;
+}
+main .subscribe .two {
+  padding: 20px 0 20px 0;
+  margin-right: 40px;
+}
+main .subscribe .bold {
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 5px;
+}
+main .subscribe p {
+  margin: 0;
+}
+main .button-box {
+  margin: 30px 20px 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+main .button-box .button {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  border-radius: 10px;
+  font-weight: 700;
+  color: white;
+  width: 100%;
+}
+main .button-box p {
+  width: 100%;
+}
+main .button-box a {
+  text-decoration: none;
+}
+main .button-box #proceed {
+  background-color: #3829e0;
+  text-align: center;
+  -webkit-box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10px;
+}
+main .button-box #proceed:hover {
+  background-color: #756af1;
+}
+main .button-box #cancel {
+  color: #7280a7;
+}
+main .button-box #cancel:hover {
+  color: #1f2f56;
+}
+
+.attribution {
+  font-size: 10;
+  text-align: center;
+  color: #7280a7;
+}
+.attribution a {
+  text-decoration: none;
+  color: #1f2f56;
+}
+
+@media screen and (min-width: 400px) {
+  body {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/pattern-background-desktop.svg");
+  }
+
+  .order-summary {
+    margin-top: 100px;
+    width: 450px;
+    height: 100%;
+  }
+
+  main .subscribe {
+    margin: 20px 50px 0 50px;
+  }
+  main .button-box {
+    margin: 30px 50px 0 50px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

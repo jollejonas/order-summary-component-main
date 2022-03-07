@@ -1,0 +1,161 @@
+$white: hsl(0, 0, 100%);
+$darkblue: hsl(223, 47%, 23%);
+$dsatblue: hsl(224, 23%, 55%);
+$verypaleblue: hsl(225, 100%, 98%);
+$paleblue: hsl(225, 100%, 94%);
+$brightblue: hsl(245, 75%, 52%);
+$purple: hsl(245, 83%, 68%);
+$font: "Red Hat Display", sans-serif;
+
+body {
+    background-color: $paleblue;
+    background-image: url("../images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 375px;
+    margin: 0;
+    font-family: $font;
+}
+
+.order-summary {
+    margin: 10px auto 10px auto;
+    border-radius: 20px;
+    width: 340px;
+    height: 100%;
+    background-color: $white;
+}
+
+header {
+    text-align: center;
+    img {
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+
+    h1 {
+        color: $darkblue;
+        font-size: 20px;
+        font-weight: 900;
+    }
+}
+
+main {
+    p {
+        font-size: 16px;
+        text-align: center;
+    }
+    .info {
+        line-height: 24px;
+        margin: 0 28px 0 28px;
+        font-weight: 500;
+        color: $dsatblue;
+    }
+    .subscribe {
+        background-color: $verypaleblue;
+        border-radius: 8px;
+        margin: 20px 20px 0 20px;
+        padding: 0 12px 0 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a {
+            font-weight: 700;
+        }
+        a:hover {
+            text-decoration: none;
+            color: $purple;
+        }
+        .two {
+            padding: 20px 0 20px 0;
+            margin-right: 40px;
+        }
+
+        .bold {
+            font-weight: 900;
+            color: $darkblue;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 0;
+        }
+    }
+
+    .button-box {
+        margin: 30px 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+        .button {
+            display: flex;
+            align-items: center;
+            height: 60px;
+            border-radius: 10px;
+            font-weight: 700;
+            color: $white;
+            width: 100%;
+        }
+
+        p {
+            width: 100%;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        #proceed {
+            background-color: $brightblue;
+            text-align: center;
+            -webkit-box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 0.2);
+            box-shadow: 0px 15px 15px 1px rgba(0, 0, 0, 0.2);
+            margin-bottom: 10px;
+        }
+
+        #proceed:hover {
+            background-color: $purple;
+        }
+
+        #cancel {
+            color: $dsatblue;
+        }
+
+        #cancel:hover {
+            color: $darkblue;
+        }
+    }
+}
+
+.attribution {
+    font-size: 10;
+    text-align: center;
+    color: $dsatblue;
+
+    a {
+        text-decoration: none;
+        color: $darkblue;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    body {
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/pattern-background-desktop.svg");
+    }
+
+    .order-summary {
+        margin-top: 100px;
+        width: 450px;
+        height: 100%;
+    }
+
+    main {
+        .subscribe {
+            margin: 20px 50px 0 50px;
+        }
+
+        .button-box {
+            margin: 30px 50px 0 50px;
+        }
+    }
+}
